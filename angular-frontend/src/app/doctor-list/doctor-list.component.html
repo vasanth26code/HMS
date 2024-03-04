@@ -1,0 +1,49 @@
+<div class="bgofbody">
+      
+
+<h2>Choose a Doctor of whom u want to check the Information of:</h2>
+
+<!-- <form >
+    <label>Choose a Doctor of whom u want to check the Information of: </label>
+<select >
+    <option value="" *ngFor="let doctor of doctors"  ">{{doctor.name}}
+    </option>
+    <option value="" *ngFor="let doctor of doctors"></option>
+</select>
+<button type="submit">Getvalue</button> -->
+<!-- <button type="button" class="btn btn-success" type="submit">Get Value</button> -->
+<!-- </form> -->
+
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Specialist feild </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let doctor of doctors">
+            <td>{{doctor.id}}</td>
+            <td>{{doctor.name}}</td>
+            <td>{{doctor.age}}</td>
+            <td>{{doctor.gender}}</td>
+            <td>{{doctor.specialist_feild}}</td>
+            <!-- <td>
+                <button (click)="getDoctorById(doctor.id)">Get values</button> 
+            </td> -->
+
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+</div>

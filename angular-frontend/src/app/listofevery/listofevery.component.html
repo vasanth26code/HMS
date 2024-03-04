@@ -1,0 +1,42 @@
+<h5 class="text-center">Access Doctor information</h5>
+
+<div class="container" >
+
+    <!-- <form (ngSubmit)="viewProfile(putDoctorId)"> --><form>
+        <label>Choose a Doctor of whom u want to check the Information of: </label>
+            <select style = 
+            "width:  35%;
+            height: 42px;" name="visitedDoctor" id="visitedDoctor" [(ngModel)]="putDoctorId" class="dropDownField">
+                <option value="" *ngFor="let doctor of doctors" [ngValue]="doctor.id">{{doctor.name}}
+                </option>
+            </select>
+                      <div class="container">
+                        <ng-container *ngFor="let doctor of doctors">
+                         
+                          <ng-container *ngIf="doctor.id === putDoctorId ">
+                            <br>
+                                <!--<p>{{doctor.name}}'s Details</p>-->
+                                <div class="edit1" style="text-align: -webkit-center;">
+                                <div class="card text-white bg-primary mb-6" style="max-width: 40rem;">
+                                  <div class="card-header">Doctor's ID Card</div>
+                                  <div class="card-body">
+                                    
+                                    <p class="card-text">Doctor's Name: {{doctor.name}}</p>
+                                    <p class="card-text">Doctor's Specialist Field: {{doctor.specialist_feild}}</p>
+                                    <!-- <p class="card-text">Number of Attendies Yet:  {{doctor.noofpatientsattended}}</p> -->
+                                  </div>
+                                </div>
+                              </div>
+                                <ng-container></ng-container>
+                                </ng-container>
+                          </ng-container>
+                          
+                          <!-- <button type="button" class="btn btn-success" type="submit">
+                            View
+                            Profile
+                        </button> -->
+                     
+                      </div>
+    </form>
+    </div>
+
