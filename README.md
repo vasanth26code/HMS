@@ -8,7 +8,7 @@ Hospital Management System is a beginner REST API project which uses Spring Boot
 
 ## Home
 ### Look of Homepage
-![preview of code](https://github.com/vasanth26code/Hospital-Management-System-HMS-Intern-Project-/blob/main/screenshots%20of%20HMS/Screenshot%202024-03-04%20131518.png)
+![preview of code]()
 
 ### The Server is running on http://localhost:4200/ in which the backend of the project i.e-Spring is integrated with it. 
 
